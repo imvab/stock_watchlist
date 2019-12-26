@@ -9,7 +9,8 @@ class Watchlist extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "Watchlist",
-      home: StockList()
+      home: StockList(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
