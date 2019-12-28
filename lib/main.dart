@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stock_watchlist/screens/stock_list.dart';
+import 'package:stock_watchlist/screens/stock_list_updated.dart';
 
 
 void main() => runApp(Watchlist());
@@ -11,6 +11,7 @@ class Watchlist extends StatelessWidget {
       title: "Watchlist",
       home: StockList(),
       debugShowCheckedModeBanner: false,
+      
     );
   }
 }

@@ -36,8 +36,6 @@ class Stock {
         faceValue: json["FACE VALUE"],
     );
 
-    get length => null;
-
     Map<String, dynamic> toJson() => {
         "SYMBOL": symbol,
         "NAME OF COMPANY": nameOfCompany,
@@ -48,6 +46,32 @@ class Stock {
         "ISIN NUMBER": isinNumber,
         "FACE VALUE": faceValue,
     };
+
+    Map<String, dynamic> toDb(){
+      var map = Map<String, dynamic>();
+      map["symbol"] = symbol;
+      map["name"] = nameOfCompany;
+      map["series"] = series;
+      map["date_listing"] = dateOfListing;
+      map["paid_value"] = paidUpValue;
+      map["mkt_lot"] = marketLot;
+      map["isin_num"] = isinNumber;
+      map["face_value"] = faceValue;
+      return map;
+    }
+
+
+
+    factory Stock.fromDb(Map<String, dynamic> map) => Stock(
+      symbol: map["symbol"],
+      nameOfCompany: map["name"],
+      series: map["series"],
+      dateOfListing: map["date_listing"],
+      paidUpValue: map["paid_value"],
+      marketLot: map["mkt_lot"],
+      isinNumber: map["isin_num"],
+      faceValue: map["face_value"],
+    );
 }
 
 
