@@ -1,6 +1,6 @@
-# stock_watchlist
+# Stock Watchlist
 
-A new Flutter project.
+App to track your equity investments using Flutter and TradingView Charts.
 
 ## Getting Started
 
