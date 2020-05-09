@@ -4,6 +4,8 @@ import 'package:stock_watchlist/screens/stock_list_updated.dart';
 
 void main() => runApp(Watchlist());
 
+
+
 class Watchlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
